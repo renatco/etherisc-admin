@@ -21,6 +21,7 @@
         // config
         vm.app = {
           name: 'Etherisc Admin',
+          year: new Date().getFullYear(),
           version: '1.1.3',
           // for chart colors
           color: {
