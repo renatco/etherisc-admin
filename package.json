@@ -1,0 +1,20 @@
+{
+  "name": "etherisc-dashboard",
+  "version": "1.1.2",
+  "description": "Etherisc Flight Policies Dashboard",
+  "scripts": {
+    "start": "node devServer"
+  },
+  "keywords": [
+    "ethereum",
+    "etherisc",
+    "blockchain"
+  ],
+  "repository": "https://github.com/renatco/etherisc-dashboard.git",
+  "author": "renatco <renatko@tut.by>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.1.0"
+  }
+}

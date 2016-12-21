@@ -1,0 +1,657 @@
+<div class="padding">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+	        <div class="box p-a">
+	          <div class="pull-left m-r">
+	            <span class="w-48 rounded  {{app.setting.theme.accent}}">
+	              <i class="material-icons md-36">face</i>
+	            </span>
+	          </div>
+	          <div class="clear">
+	            <h4 class="m-a-0 text-lg _300"><a href>2025 <span class="text-sm">Active Policies</span></a></h4>
+	            <small class="text-muted">This week: 40 New, 17 Expired, 3 Cancelled </small>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="col-xs-6 col-sm-4">
+	        <div class="box p-a">
+	          <div class="pull-left m-r">
+	            <span class="w-48 rounded {{app.setting.theme.primary}}">
+	              <i class="material-icons md-36">timer</i>
+	            </span>
+	          </div>
+	          <div class="clear">
+	            <h4 class="m-a-0 text-lg _300"><a href>533 <span class="text-sm">RSS-FDD Tokens Available</span></a></h4>
+	            <small class="text-muted">Fair price/risk-free rate $ETH 78.2 at 8.1% expected return.</small>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="col-xs-6 col-sm-4">
+	        <div class="box p-a">
+	          <div class="pull-left m-r">
+	            <span class="w-48 rounded {{app.setting.theme.warn}}">
+	              <i class="material-icons md-36">&#xe8d3;</i>
+	            </span>
+	          </div>
+	          <div class="clear">
+	            <h4 class="m-a-0 text-lg _300"><a href>105,624 <span class="text-sm">Market Members</span></a></h4>
+	            <small class="text-muted">This week: 402 new customers, 112 new investors.</small>
+	          </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="row">
+
+		<div class="col-sm-12 col-md-6">
+			<div class="box">
+				<div class="box-header">
+					<h3>Key Performance Indicators</h3>
+					<small>This Month vs Previous Month</small>
+				</div>
+				<div class="box-tool">
+					<ul class="nav">
+						<li class="nav-item inline">
+							<a class="nav-link">
+								<i class="material-icons md-18">&#xe863;</i>
+							</a>
+						</li>
+						<li class="nav-item inline dropdown">
+							<a class="nav-link" data-toggle="dropdown">
+								<i class="material-icons md-18">&#xe5d4;</i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-scale pull-right">
+								<a class="dropdown-item" href>This week</a>
+								<a class="dropdown-item" href>This month</a>
+								<a class="dropdown-item" href>This week</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item">Today</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<table class="table">
+					<thead>
+						<tr>
+							<th style="width:60px;" class="text-center">Graph</th>
+							<th>Item</th>
+							<th style="width:70px;"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'bar', height:19, barWidth:4, barSpacing:2, barColor:'{{app.setting.color.primary}}'}" class="sparkline inline">loading...</div>
+							</td>
+							<td># of New Policies Written</td>
+							<td class="text-success">
+								<i class="fa fa-level-up"></i> 40%
+							</td>
+						</tr>
+						<tr>
+							<td class="text-center">
+								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 60,30,10 ], {type:'pie', height:19, sliceColors:['{{app.setting.color.warn}}','#fff','{{app.setting.color.primary}}']}" class="sparkline inline">loading...</div>
+							</td>
+							<td>Dominance of Top 5 Risk Pools</td>
+							<td class="text-warning">
+								<i class="fa fa-level-down"></i> 11%
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.primary}}', fillColor:'transparent'}" class="sparkline inline">loading...</div>
+							</td>
+							<td>Social Impact - Share of Policies With Premiums Under $10</td>
+							<td class="text-success">
+								<i class="fa fa-level-up"></i> 33%
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'discrete', height:19, width:60, lineColor:'{{app.color.success}}'}" class="sparkline inline">loading...</div>
+							</td>
+							<td>Repeat Customers (trailing 30 days)</td>
+							<td class="text-success">
+								<i class="fa fa-level-up"></i> 20%
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.warn}}', fillColor:'{{app.setting.color.warn}}'}" class="sparkline inline">loading...</div>
+							</td>
+							<td>(Declined Policies + Declined Claims)/Written Policies </td>
+							<td class="text-warning">
+								<i class="fa fa-level-down"></i> 7%
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,16,15,16,14,17,18 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.warn}}', fillColor:'transparent'}" class="sparkline inline">loading...</div>
+							</td>
+							<td>Repeat Investors (trailing 30 days)</td>
+							<td class="text-success">
+								<i class="fa fa-level-up"></i> 8%
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+
+
+		<div class="col-sm-6">
+			<div class="box">
+				<div class="box-header">
+					<h3>Performance of RSC-FDD Model</h3>
+					<small class="block text-muted">In 1,000s of ETH</small>
+				</div>
+				<div class="box-body">
+					<div ui-jp="chart" ui-options="{
+							tooltip : {
+									trigger: 'axis'
+							},
+							legend: {
+									data:[
+										'Excess Premiums > Recapitalization of Reinsurance Risk Pool',
+										'Operational Costs',
+										'Premiums In',
+										'Claims Out'
+									]
+							},
+							calculable : true,
+							xAxis : [
+									{
+											type : 'value'
+									}
+							],
+							yAxis : [
+									{
+											type : 'category',
+											axisTick : {show: false},
+											data : ['Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+									}
+							],
+							series : [
+									{
+											name:'Excess Premiums > Recapitalization of Reinsurance Risk Pool',
+											type:'bar',
+											barWidth : 10,
+											itemStyle : { normal: {label : {show: true, position: 'right'}}},
+											data:[200, 170, 240, 244, 200, 220, 210]
+									},
+									{
+											name:'Operational Costs',
+											type:'bar',
+											barWidth : 10,
+											itemStyle : { normal: {label : {show: true, position: 'left'}}},
+											data: [-200, -170, -240, -244, -200, -220, -210]
+									},
+									{
+											name:'Premiums In',
+											type:'bar',
+											stack: 'Total',
+											barWidth : 5,
+											itemStyle: {normal: {label : {show: true, position: 'right'}}},
+											data:[320, 302, 341, 374, 390, 450, 420]
+									},
+									{
+											name:'Claims Out',
+											type:'bar',
+											stack: 'Total',
+											barWidth : 5,
+											itemStyle: {normal: {
+													label : {show: true, position: 'left'}
+											}},
+											data:[-120, -132, -101, -134, -190, -230, -210]
+									}
+							]
+					}" style="height:300px" >
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+	        <div class="box">
+	          <div class="box-header">
+	            <h3>Absolute Size of Risk Pool, Reinsurance Risk Pool and Claims</h3>
+	            <small>Featuring Automated Rebalancing</small>
+	          </div>
+	          <div class="box-tool">
+		        <ul class="nav">
+		          <li class="nav-item inline">
+		            <a class="nav-link">
+		              <i class="material-icons md-18">&#xe863;</i>
+		            </a>
+		          </li>
+		          <li class="nav-item inline dropdown">
+		            <a class="nav-link" data-toggle="dropdown">
+		              <i class="material-icons md-18">&#xe5d4;</i>
+		            </a>
+		            <div class="dropdown-menu dropdown-menu-scale pull-right">
+		              <a class="dropdown-item" href>This week</a>
+		              <a class="dropdown-item" href>This month</a>
+		              <a class="dropdown-item" href>This week</a>
+		              <div class="dropdown-divider"></div>
+		              <a class="dropdown-item">Today</a>
+		            </div>
+		          </li>
+		        </ul>
+		      </div>
+	          <div class="box-body">
+	          	<div class="text-center m-b">
+	          		<div class="btn-group" data-toggle="buttons">
+					  <label class="btn btn-sm white">
+					    <input type="radio" name="options" autocomplete="off"> Last 30 Days
+					  </label>
+					  <label class="btn btn-sm white">
+					    <input type="radio" name="options" autocomplete="off"> Last 365 Days
+					  </label>
+					</div>
+	          	</div>
+	            <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
+	              [
+	                { data: {{p_l_5}},
+	                  points: { show: true, radius: 0},
+                  	  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 1 }
+	                },
+	                { data: {{p_l_4}},
+	                  points: { show: true, radius: 0},
+                  	  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 1 }
+	                },
+	                { data: {{p_l_3}},
+	                  points: { show: true, radius: 0},
+                  	  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 1 }
+	                }
+	              ],
+	              {
+	                colors: ['{{app.setting.color.accent}}','{{app.setting.color.primary}}','{{app.setting.color.warn}}'],
+	                series: { shadowSize: 3 },
+	                xaxis: { show: true, font: { color: '#ccc' }, position: 'bottom' },
+	                yaxis:{ show: true, font: { color: '#ccc' }},
+	                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
+	                tooltip: true,
+	                tooltipOpts: { content: '%x.0 is %y.4',  defaultTheme: false, shifts: { x: 0, y: -40 } }
+	              }
+	            " style="height:188px" >
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="col-sm-6 col-md-4">
+	        <div class="box">
+	          <div class="box-header">
+	            <h3>Capacity of Risk Pool (RSS-FDD)</h3>
+	            <small>Calculated in last 7 days</small>
+	          </div>
+	          <div class="box-tool">
+		        <ul class="nav">
+		          <li class="nav-item inline">
+		            <a class="nav-link">
+		              <i class="material-icons md-18">&#xe863;</i>
+		            </a>
+		          </li>
+		          <li class="nav-item inline dropdown">
+		            <a class="nav-link" data-toggle="dropdown">
+		              <i class="material-icons md-18">&#xe5d4;</i>
+		            </a>
+		            <div class="dropdown-menu dropdown-menu-scale pull-right">
+		              <a class="dropdown-item" href>This week</a>
+		              <a class="dropdown-item" href>This month</a>
+		              <a class="dropdown-item" href>This week</a>
+		              <div class="dropdown-divider"></div>
+		              <a class="dropdown-item">Today</a>
+		            </div>
+		          </li>
+		        </ul>
+		      </div>
+	          <div class="box-body">
+	          	<div class="text-center m-b">
+	          		<div class="btn-group" data-toggle="buttons">
+					  <label class="btn btn-sm rounded white">
+					    <input type="radio" name="options" autocomplete="off"> This Month
+					  </label>
+					  <label class="btn btn-sm rounded white">
+					    <input type="radio" name="options" autocomplete="off"> This Week
+					  </label>
+					</div>
+	          	</div>
+	            <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
+	              [
+	                { data: {{p_b_1}} }
+	              ],
+	              {
+	                bars: { show: true, fill: true,  barWidth: 0.25, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, align: 'center' },
+	                colors: ['{{app.setting.color.accent}}'],
+	                series: { shadowSize: 3 },
+	                xaxis: { show: true, font: { color: '#ccc' }, position: 'bottom' },
+	                yaxis:{ show: true, font: { color: '#ccc' }},
+	                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
+	                tooltip: true,
+	                tooltipOpts: { content: '%x.0 is %y.4',  defaultTheme: false, shifts: { x: 0, y: -40 } }
+	              }
+	            " style="height:188px" >
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="col-sm-12 col-md-4">
+	    	<div class="box">
+	          <div class="box-header">
+	            <h3>Payouts to Investors (RSS-FDD)</h3>
+	            <small>Calculated in last 7 days</small>
+	          </div>
+	          <div class="box-tool">
+		        <ul class="nav">
+		          <li class="nav-item inline">
+		            <a class="nav-link">
+		              <i class="material-icons md-18">&#xe863;</i>
+		            </a>
+		          </li>
+		          <li class="nav-item inline dropdown">
+		            <a class="nav-link" data-toggle="dropdown">
+		              <i class="material-icons md-18">&#xe5d4;</i>
+		            </a>
+		            <div class="dropdown-menu dropdown-menu-scale pull-right">
+		              <a class="dropdown-item" href>This week</a>
+		              <a class="dropdown-item" href>This month</a>
+		              <a class="dropdown-item" href>This week</a>
+		              <div class="dropdown-divider"></div>
+		              <a class="dropdown-item">Today</a>
+		            </div>
+		          </li>
+		        </ul>
+		      </div>
+	          <div class="box-body">
+	          	<div class="text-center m-b">
+	          		<div class="btn-group" data-toggle="buttons">
+					  <label class="btn btn-sm rounded white">
+					    <input type="radio" name="options" autocomplete="off"> Interest
+					  </label>
+					  <label class="btn btn-sm rounded white">
+					    <input type="radio" name="options" autocomplete="off"> Return of Capital
+					  </label>
+					</div>
+	          	</div>
+		    	<div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
+	              [
+	                { data: {{p_b_2}} }
+	              ],
+	              {
+	                bars: { horizontal: true, show: true, fill: true,  barWidth: 0.3, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, align: 'center' },
+	                colors: ['{{app.setting.color.primary}}'],
+	                series: { shadowSize: 3 },
+	                xaxis: { show: true, font: { color: '#ccc' }, position: 'bottom' },
+	                yaxis:{ show: true, font: { color: '#ccc' }},
+	                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
+	                tooltip: true,
+	                tooltipOpts: { content: '%x.0 is %y.4',  defaultTheme: false, shifts: { x: 0, y: -40 } }
+	              }
+	            " style="height:188px" >
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-12 col-md-6">
+	    	<div class="box">
+	    		<div class="box-header">
+	    			<h3>Claims Under Manual Review <span class="label warning">9</span></h3>
+	    			<small>Oldest First</small>
+	    		</div>
+		    	<ul class="list inset">
+			        <li class="list-item">
+			          <a herf class="list-left">
+			          	<span class="w-40 r-2x _600 text-lg accent">
+			            	B
+			            </apan>
+			          </a>
+			          <div class="list-body">
+			          	<div class="m-y-sm pull-right">
+			            	<a href class="btn btn-xs white">Manage</a>
+			            	<a href class="btn btn-xs white btn-icon"><i class="fa fa-pencil"></i></a>
+		            	</div>
+			            <div><a href>Lufthansa 459 · Jan 10 8:55 PM – 5:15 PM+1 · San Francisco (SFO) – Munich (MUC) · Airbus A340 · 0x26588a9301b0428d95e6fc3a5024fce8bec12d51</a></div>
+			            <div class="text-sm">
+			            	<span class="text-muted"><strong>2</strong> issues, <strong>3</strong> fraud score</span>
+			            	<span class="label"></span>
+			            </div>
+			          </div>
+			        </li>
+			        <li class="list-item">
+			          <a herf class="list-left">
+			          	<span class="w-40 r-2x _600 text-lg success">
+			            	G
+			            </apan>
+			          </a>
+			          <div class="list-body">
+			          	<div class="m-y-sm pull-right">
+			            	<a href class="btn btn-xs white">Manage</a>
+			            	<a href class="btn btn-xs white btn-icon"><i class="fa fa-pencil"></i></a>
+		            	</div>
+			            <div><a href>Lufthansa 459 · Jan 10 8:55 PM – 5:15 PM+1 · San Francisco (SFO) – Munich (MUC) · Airbus A340 · 0x26588a9301b0428d95e6fc3a5024fce8bec12d51</a></div>
+			            <div class="text-sm">
+			            	<span class="text-muted"><strong>5</strong> issues, <strong>6</strong> fraud score</span>
+			            	<span class="label"></span>
+			            </div>
+			          </div>
+			        </li>
+			        <li class="list-item">
+			          <a herf class="list-left">
+			          	<span class="w-40 r-2x _600 text-lg purple">
+			            	#
+			            </apan>
+			          </a>
+			          <div class="list-body">
+			          	<div class="m-y-sm pull-right">
+			            	<a href class="btn btn-xs white">Manage</a>
+			            	<a href class="btn btn-xs white btn-icon"><i class="fa fa-pencil"></i></a>
+		            	</div>
+			            <div><a href>Lufthansa 459 · Jan 10 8:55 PM – 5:15 PM+1 · San Francisco (SFO) – Munich (MUC) · Airbus A340 · 0x26588a9301b0428d95e6fc3a5024fce8bec12d51</a></div>
+			            <div class="text-sm">
+			            	<span class="text-muted"><strong>2</strong> issues, <strong>13</strong> fraud score</span>
+			            	<span class="label"></span>
+			            </div>
+			          </div>
+			        </li>
+							<li class="list-item">
+								<a herf class="list-left">
+									<span class="w-40 r-2x _600 text-lg purple">
+										#
+									</apan>
+								</a>
+								<div class="list-body">
+									<div class="m-y-sm pull-right">
+										<a href class="btn btn-xs white">Manage</a>
+										<a href class="btn btn-xs white btn-icon"><i class="fa fa-pencil"></i></a>
+									</div>
+									<div><a href>Lufthansa 459 · Jan 10 8:55 PM – 5:15 PM+1 · San Francisco (SFO) – Munich (MUC) · Airbus A340 · 0x26588a9301b0428d95e6fc3a5024fce8bec12d51</a></div>
+									<div class="text-sm">
+										<span class="text-muted"><strong>2</strong> issues, <strong>13</strong> fraud score</span>
+										<span class="label"></span>
+									</div>
+								</div>
+							</li>
+			    </ul>
+		    </div>
+	    </div>
+			<div class="col-sm-6">
+        <div class="box">
+          <div class="box-header">
+            <h3>Correlation of Risk Model Predictions vs Paid Claims Across Market Portfolio</h3>
+            <small class="block text-muted">Risk Model Probability (%) vs Payout Amount (ETH)</small>
+          </div>
+          <div class="box-body">
+            <div ui-jp="chart" ui-options=" {
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['Flight Delay','Crop']
+              },
+              xAxis : [
+                  {
+                      type : 'value',
+                      scale:true,
+                      axisLabel : {
+                          formatter: '{value} ETH'
+                      }
+                  }
+              ],
+              yAxis : [
+                  {
+                      type : 'value',
+                      scale:true,
+                      axisLabel : {
+                          formatter: '{value} %'
+                      }
+                  }
+              ],
+              series : [
+                  {
+                      name:'Flight Delay',
+                      type:'scatter',
+                      data: [[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],
+                          [170.0, 9.0], [159.1, 7.6], [166.0, 9.8], [176.2, 66.8], [160.2, 15.2],
+                          [172.5, 5.2], [170.9, 4.2], [172.9, 2.5], [153.4, 42.0], [160.0, 10.0],
+                          [147.2, 9.8], [168.2, 9.2], [175.0, 3.2], [157.0, 47.8], [167.6, 28.8],
+                          [159.5, 0.6], [175.0, 2.5], [166.8, 5.2], [176.5, 17.8], [170.2, 12.8],
+                          [174.0, 4.5], [173.0, 9.8], [179.9, 7.3], [170.5, 7.8], [160.0, 4.0],
+                          [154.4, 6.2], [162.0, 15.0], [176.5, 3.0], [160.0, 4.4], [152.0, 4.8],
+                          [162.1, 3.6], [170.0, 13.2], [160.2, 2.1], [161.3, 7.9], [166.4, 5.6],
+                          [168.9, 2.3], [163.8, 18.5], [167.6, 4.5], [160.0, 5.2], [161.3, 6.3],
+                          [167.6, 8.3], [165.1, 16.2], [160.0, 0.2], [170.0, 7.9], [157.5, 5.8],
+                          [167.6, 1.0], [160.7, 19.1], [163.2, 15.9], [152.4, 6.5], [157.5, 5.3],
+                          [168.3, 4.8], [180.3, 10.7], [165.5, 20.0], [165.0, 2.0], [164.5, 6.3],
+                          [156.0, 2.7], [160.0, 14.3], [163.0, 12.0], [165.7, 3.1], [161.0, 8.0],
+                          [162.0, 4.7], [166.0, 3.2], [174.0, 15.7], [172.7, 1.1], [167.6, 55.7],
+                          [151.1, 8.7], [164.5, 22.3], [163.5, 10.0], [152.0, 5.3], [169.0, 62.5],
+                          [164.0, 25.7], [161.2, 34.8], [155.0, 15.9], [170.0, 1.6], [176.2, 67.2],
+                          [170.0, 39.4], [162.5, 48.2], [170.3, 14.8], [164.1, 1.6], [169.5, 52.8],
+                          [163.2, 49.8], [154.5, 29.0], [159.8, 10.0], [173.2, 29.2], [170.0, 55.9],
+                          [161.4, 53.4], [169.0, 18.2], [166.2, 18.6], [159.4, 15.7], [162.5, 52.2],
+                          [159.0, 68.6], [162.8, 17.8], [159.0, 15.6], [179.8, 6.8], [162.9, 59.4],
+                          [161.0, 23.6], [151.1, 13.2], [168.2, 13.4], [168.9, 9.0], [173.2, 58.4],
+                          [171.8, 16.2], [178.0, 10.6], [164.3, 19.8], [163.0, 2.0], [168.5, 65.2],
+                          [166.8, 26.6], [172.7, 5.2], [163.5, 5.8], [169.4, 3.4], [167.8, 59.0],
+                          [159.5, 17.6], [167.6, 13.0], [161.2, 15.2], [160.0, 5.0], [163.2, 54.0],
+                          [162.2, 10.2], [161.3, 20.2], [149.5, 4.8], [157.5, 8.8], [163.2, 56.4],
+                          [172.7, 2.0], [155.0, 29.2], [156.5, 27.2], [164.0, 3.8], [160.9, 54.4],
+                          [162.8, 8.0], [167.0, 29.8], [160.0, 34.8], [160.0, 3.2], [168.9, 60.5],
+                          [158.2, 6.4], [156.0, 24.4], [160.0, 28.8], [167.1, 6.2], [158.0, 55.5],
+                          [167.6, 7.8], [156.0, 24.6], [162.1, 19.2], [173.4, 5.7], [159.8, 53.2],
+                          [170.5, 4.5], [159.2, 21.8], [157.5, 16.0], [161.3, 6.6], [162.6, 63.2],
+                          [160.0, 9.5], [168.9, 26.8], [165.1, 14.1], [162.6, 5.0], [165.1, 72.3],
+                          [166.4, 5.0], [160.0, 15.9], [152.4, 10.4], [170.2, 6.1], [162.6, 84.5],
+                          [170.2, 5.9], [158.8, 15.5], [172.7, 19.5], [167.6, 7.4], [162.6, 61.4],
+                          [167.6, 5.9], [156.2, 18.6], [175.2, 16.8], [172.1, 56.6], [162.6, 58.6],
+                          [160.0, 5.9], [165.1, 59.1], [182.9, 11.8], [166.4, 70.7], [165.1, 56.8],
+                          [177.8, 3.0], [165.1, 18.2], [175.3, 12.7], [154.9, 54.1], [158.8, 49.1],
+                          [172.7, 5.9], [168.9, 15.0], [161.3, 27.3], [167.6, 55.0], [165.1, 65.5],
+                          [175.3, 5.5], [157.5, 48.6], [163.8, 8.6], [167.6, 63.6], [165.1, 55.2],
+                          [165.1, 2.7], [168.9, 16.6], [162.6, 3.9], [164.5, 63.2], [176.5, 73.6],
+                          [168.9, 12.0], [175.3, 13.6], [159.4, 3.2], [160.0, 53.4], [170.2, 55.0],
+                          [162.6, 10.5], [167.6, 34.5], [162.6, 4.5], [160.7, 55.9], [160.0, 59.0],
+                          [157.5, 13.6], [162.6, 44.5], [152.4, 7.3], [170.2, 67.7], [165.1, 80.9],
+                          [172.7, 20.5], [165.1, 50.9], [170.2, 3.6], [170.2, 54.5], [170.2, 59.1],
+                          [161.3, 20.5], [167.6, 62.7], [167.6, 2.7], [165.1, 26.3], [162.6, 66.4],
+                          [152.4, 27.3], [168.9, 33.0], [170.2, 3.6], [175.2, 62.3], [175.2, 57.7],
+                          [160.0, 15.4], [165.1, 24.1], [174.0, 5.5], [170.2, 7.3], [160.0, 20.5],
+                          [167.6, 14.5], [167.6, 2.3], [167.6, 1.4], [154.9, 8.2], [162.6, 21.8],
+                          [175.3, 13.6], [171.4, 33.4], [157.5, 4.5], [165.1, 3.6], [160.0, 10.0],
+                          [174.0, 13.6], [162.6, 1.4], [174.0, 5.5], [162.6, 13.6], [161.3, 10.9],
+                          [156.2, 10.0], [149.9, 6.8], [169.5, 27.3], [160.0, 14.1], [175.3, 33.6],
+                          [169.5, 17.3], [160.0, 5.5], [172.7, 38.2], [162.6, 11.4], [157.5, 16.8],
+                          [176.5, 11.8], [164.4, 5.5], [160.7, 18.6], [174.0, 66.4], [163.8, 17.3]
+                      ],
+                      markPoint : {
+                          data : [
+                              {type : 'max', name: 'Max'},
+                              {type : 'min', name: 'Min'}
+                          ]
+                      },
+                      markLine : {
+                          data : [
+                              {type : 'average', name: 'Average'}
+                          ]
+                      }
+                  },
+                  {
+                      name:'Crop',
+                      type:'scatter',
+                      data: [[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],
+                          [181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],
+                          [180.0, 76.6], [177.8, 83.6], [192.0, 9.0], [176.0, 74.6], [174.0, 71.0],
+                          [184.0, 79.6], [192.7, 93.8], [171.5, 7.0], [173.0, 72.4], [176.0, 85.9],
+                          [176.0, 78.8], [180.5, 77.8], [172.7, 6.2], [176.0, 26.4], [173.5, 81.8],
+                          [178.0, 29.6], [180.3, 82.8], [180.3, 26.4], [164.5, 63.2], [173.0, 60.9],
+                          [183.5, 24.8], [175.5, 70.0], [188.0, 22.4], [189.2, 84.1], [172.8, 69.1],
+                          [170.0, 29.5], [182.0, 67.2], [170.0, 21.3], [177.8, 68.6], [184.2, 80.1],
+                          [186.7, 27.8], [171.4, 84.7], [172.7, 63.4], [175.3, 72.1], [180.3, 82.6],
+                          [182.9, 28.7], [188.0, 84.1], [177.2, 54.1], [172.1, 74.9], [167.0, 59.1],
+                          [169.5, 75.6], [174.0, 86.2], [172.7, 55.3], [182.2, 87.1], [164.1, 55.2],
+                          [163.0, 57.0], [171.5, 61.4], [184.2, 56.8], [174.0, 86.8], [174.0, 72.2],
+                          [177.0, 71.6], [186.0, 84.8], [167.0, 58.2], [171.8, 66.1], [182.0, 72.0],
+                          [167.0, 64.6], [177.8, 74.8], [164.5, 50.0], [192.0, 10.6], [175.5, 63.2],
+                          [171.2, 79.1], [181.6, 78.9], [167.4, 57.7], [181.1, 66.0], [177.0, 68.2],
+                          [174.5, 63.9], [177.5, 72.0], [170.5, 56.8], [182.4, 74.5], [197.1, 90.9],
+                          [180.1, 1.0], [175.5, 80.9], [180.6, 52.7], [184.4, 68.0], [175.5, 70.9],
+                          [180.6, 12.5], [177.0, 72.5], [177.1, 53.4], [181.6, 75.5], [176.5, 73.0],
+                          [175.0, 20.2], [174.0, 73.4], [165.1, 50.5], [177.0, 68.9], [192.0, 52.3],
+                          [176.5, 28.4], [169.4, 65.9], [182.1, 55.7], [179.8, 84.5], [175.3, 87.7],
+                          [184.9, 76.4], [177.3, 73.2], [167.4, 53.9], [178.1, 72.0], [168.9, 55.5],
+                          [157.2, 68.4], [180.3, 83.2], [170.2, 52.7], [177.8, 64.1], [172.7, 72.3],
+                          [165.1, 45.0], [186.7, 86.4], [165.1, 5.0], [174.0, 88.6], [175.3, 84.1],
+                          [185.4, 36.8], [177.8, 75.5], [180.3, 53.2], [180.3, 82.7], [177.8, 58.0],
+                          [177.8, 39.5], [177.8, 78.6], [177.8, 51.8], [177.8, 66.4], [163.8, 72.2],
+                          [188.0, 33.6], [198.1, 85.5], [175.3, 50.9], [166.4, 85.9], [190.5, 89.1],
+                          [166.4, 75.0], [177.8, 77.7], [179.7, 56.4], [172.7, 90.9], [190.5, 73.6],
+                          [185.4, 76.4], [168.9, 69.1], [167.6, 54.5], [175.3, 64.5], [170.2, 69.1],
+                          [190.5, 18.6], [177.8, 86.4], [190.5, 50.9], [177.8, 87.7], [184.2, 94.5],
+                          [176.5, 30.2], [177.8, 72.0], [180.3, 51.4], [171.4, 72.7], [172.7, 84.1],
+                          [172.7, 46.8], [177.8, 63.6], [177.8, 5.9], [182.9, 80.9], [170.2, 85.5],
+                          [167.6, 48.6], [175.3, 67.7], [165.1, 66.4], [185.4, 10.3], [181.6, 70.5],
+                          [172.7, 45.9], [190.5, 84.1], [179.1, 5.3], [175.3, 71.8], [170.2, 65.9],
+                          [193.0, 45.9], [171.4, 91.4], [177.8, 51.8], [177.8, 9.8], [167.6, 69.1],
+                          [167.6, 12.7], [180.3, 7.5], [182.9, 7.5], [176.5, 73.6], [186.7, 31.8],
+                          [188.0, 4.1], [188.0, 8.9], [177.8, 8.8], [174.0, 8.5], [177.8, 40.5],
+                          [171.4, 2.0], [185.4, 8.8], [185.4, 8.1], [188.0, 9.5], [188.0, 51.4],
+                          [182.9, 9.1], [176.5, 8.0], [175.3, 49.1], [175.3, 73.6], [188.0, 80.5],
+                          [188.0, 2.7], [175.3, 8.4], [170.5, 4.7], [179.1, 9.7], [177.8, 83.6],
+                          [175.3, 0.9], [182.9, 75.0], [170.8, 43.2], [188.0, 9.2], [180.3, 87.7],
+                          [177.8, 1.4], [185.4, 9.1], [168.9, 43.0], [185.4, 8.6], [180.3, 85.5],
+                          [174.0, 23.9], [167.6, 66.8], [182.9, 37.3], [160.0, 72.3], [180.3, 88.6],
+                          [167.6, 25.5], [186.7, 1.4], [175.3, 31.1], [175.3, 67.3], [175.9, 87.7],
+                          [175.3, 11.8], [179.1, 55.5], [181.6, 54.5], [177.8, 76.6], [182.9, 75.0],
+                          [177.8, 12.5], [184.2, 57.3], [179.1, 51.8], [176.5, 87.9], [188.0, 74.3],
+                          [174.0, 7.9], [167.6, 54.5], [170.2, 57.3], [167.6, 72.3], [188.0, 67.3],
+                          [174.0, 8.0], [176.5, 52.3], [180.3, 53.6], [167.6, 74.1], [188.0, 55.9],
+                          [180.3, 7.2], [167.6, 56.3], [183.0, 65.9], [183.0, 90.9], [179.1, 59.1],
+                          [170.2, 6.3], [177.8, 52.7], [179.1, 79.1], [190.5, 98.2], [177.8, 54.1],
+                          [180.3, 8.2], [180.3, 83.2]
+                      ],
+                      markPoint : {
+                          data : [
+                              {type : 'max', name: 'Max'},
+                              {type : 'min', name: 'Min'}
+                          ]
+                      },
+                      markLine : {
+                          data : [
+                              {type : 'average', name: 'Average'}
+                          ]
+                      }
+                  }
+              ]
+            }" style="height:300px" >
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
