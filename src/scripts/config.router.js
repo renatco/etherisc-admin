@@ -39,35 +39,35 @@
               templateUrl: './views/dashboard/dashboard.html',
               data : { title: 'Dashboard' },
               controller: 'ChartCtrl',
-              resolve: load(['src/scripts/controllers/chart.js'])
+              resolve: load(['./src/scripts/controllers/chart.js'])
             })
             .state('app.faucet', {
               url: '/faucet',
               templateUrl: './views/pages/faucet.html',
               data : { title: 'Faucet' },
               controller: 'FaucetCtrl',
-              resolve: load(['src/scripts/controllers/faucet.js'])
+              resolve: load(['./src/scripts/controllers/faucet.js'])
             })
             .state('app.investors', {
               url: '/investors',
               templateUrl: './views/pages/investors.html',
               data : { title: 'Investors' },
               controller: 'InvestorsCtrl',
-              resolve: load(['src/scripts/controllers/investors.js'])
+              resolve: load(['./src/scripts/controllers/investors.js'])
             })
             .state('app.management', {
               url: '/management',
               templateUrl: './views/pages/management.html',
               data : { title: 'Management' },
               controller: 'ManagementCtrl',
-              resolve: load(['src/scripts/controllers/management.js'])
+              resolve: load(['./src/scripts/controllers/management.js'])
             })
             .state('app.oracles', {
               url: '/oracles',
               templateUrl: './views/pages/oracles.html',
               data : { title: 'Oracles' },
               controller: 'OraclesCtrl',
-              resolve: load(['src/scripts/controllers/oracles.js'])
+              resolve: load(['./src/scripts/controllers/oracles.js'])
             })
             .state('app.simple-insurance', {
               url: '/simple-insurance',
@@ -75,21 +75,21 @@
               data : { title: 'Simple Insurance' },
               controller: 'SimpleInsuranceCtrl',
               controllerAs: 'simpleInsurance',
-              resolve: load(['src/scripts/controllers/simple-insurance.js'])
+              resolve: load(['./src/scripts/controllers/simple-insurance.js'])
             })
             .state('app.statistics', {
               url: '/statistics',
               templateUrl: './views/pages/statistics.html',
               data : { title: 'Statistics' },
               controller: 'StatisticsCtrl',
-              resolve: load(['src/scripts/controllers/statistics.js'])
+              resolve: load(['./src/scripts/controllers/statistics.js'])
             })
             .state('app.future', {
               url: '/future',
               templateUrl: './views/dashboard/additional-future-directions.html',
               data : { title: 'Additional future directions' },
               controller: 'ChartCtrl',
-              resolve: load(['src/scripts/controllers/chart.js'])
+              resolve: load(['./src/scripts/controllers/chart.js'])
             })
           ;
 
