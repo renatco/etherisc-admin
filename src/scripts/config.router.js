@@ -69,13 +69,21 @@
               controller: 'OraclesCtrl',
               resolve: load(['./src/scripts/controllers/oracles.js'])
             })
-            .state('app.simple-insurance', {
-              url: '/simple-insurance',
-              templateUrl: './views/pages/simple-insurance.html',
+            .state('app.get-policy', {
+              url: '/get-policy',
+              templateUrl: './views/pages/get-policy.html',
+              data : { title: 'Apply for Policy' },
+              controller: 'GetPolicyCtrl',
+              controllerAs: 'getPolicy',
+              resolve: load(['./src/scripts/controllers/get-policy.js'])
+            })
+            .state('app.policies', {
+              url: '/policies',
+              templateUrl: './views/pages/policies.html',
               data : { title: 'Simple Insurance' },
-              controller: 'SimpleInsuranceCtrl',
-              controllerAs: 'simpleInsurance',
-              resolve: load(['./src/scripts/controllers/simple-insurance.js'])
+              controller: 'PoliciesCtrl',
+              controllerAs: 'policies',
+              resolve: load(['./src/scripts/controllers/policies.js'])
             })
             .state('app.statistics', {
               url: '/statistics',

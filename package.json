@@ -4,8 +4,8 @@
   "description": "Etherisc Flight Policies Dashboard",
   "scripts": {
     "start": "node devServer",
-    "build:dev": "webpack --watch",
-    "build": "webpack -p"
+    "build:dev": "webpack --watch --progress",
+    "build": "webpack -p --progress"
   },
   "keywords": [
     "ethereum",

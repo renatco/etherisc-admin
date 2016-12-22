@@ -4,11 +4,11 @@
     'use strict';
     angular
       .module('app')
-      .controller('SimpleInsuranceCtrl', SimpleInsurance);
+      .controller('PoliciesCtrl', Policies);
 
-      SimpleInsurance.$inject  = ['ethereum', '$scope'];
+      Policies.$inject  = ['ethereum', '$scope'];
 
-      function SimpleInsurance(ethereum, $scope){
+      function Policies(ethereum, $scope){
         var vm = this;
 
         // --- initialize values ---
