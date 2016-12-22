@@ -164,4 +164,100 @@
     </div>
     </div>
 </div>
+
+<div class="col-sm-12 col-md-6">
+  <div class="box">
+    <div class="box-header">
+      <h3>Key Performance Indicators</h3>
+      <small>This Month vs Previous Month</small>
+    </div>
+    <div class="box-tool">
+      <ul class="nav">
+        <li class="nav-item inline">
+          <a class="nav-link">
+            <i class="material-icons md-18">&#xe863;</i>
+          </a>
+        </li>
+        <li class="nav-item inline dropdown">
+          <a class="nav-link" data-toggle="dropdown">
+            <i class="material-icons md-18">&#xe5d4;</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-scale pull-right">
+            <a class="dropdown-item" href>This week</a>
+            <a class="dropdown-item" href>This month</a>
+            <a class="dropdown-item" href>This week</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item">Today</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th style="width:60px;" class="text-center">Graph</th>
+          <th>Item</th>
+          <th style="width:70px;"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'bar', height:19, barWidth:4, barSpacing:2, barColor:'{{app.setting.color.primary}}'}" class="sparkline inline">loading...</div>
+          </td>
+          <td># of New Policies Written</td>
+          <td class="text-success">
+            <i class="fa fa-level-up"></i> 40%
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center">
+            <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 60,30,10 ], {type:'pie', height:19, sliceColors:['{{app.setting.color.warn}}','#fff','{{app.setting.color.primary}}']}" class="sparkline inline">loading...</div>
+          </td>
+          <td>Dominance of Top 5 Risk Pools</td>
+          <td class="text-warning">
+            <i class="fa fa-level-down"></i> 11%
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.primary}}', fillColor:'transparent'}" class="sparkline inline">loading...</div>
+          </td>
+          <td>Social Impact - Share of Policies With Premiums Under $10</td>
+          <td class="text-success">
+            <i class="fa fa-level-up"></i> 33%
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'discrete', height:19, width:60, lineColor:'{{app.color.success}}'}" class="sparkline inline">loading...</div>
+          </td>
+          <td>Repeat Customers (trailing 30 days)</td>
+          <td class="text-success">
+            <i class="fa fa-level-up"></i> 20%
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.warn}}', fillColor:'{{app.setting.color.warn}}'}" class="sparkline inline">loading...</div>
+          </td>
+          <td>(Declined Policies + Declined Claims)/Written Policies </td>
+          <td class="text-warning">
+            <i class="fa fa-level-down"></i> 7%
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,16,15,16,14,17,18 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.warn}}', fillColor:'transparent'}" class="sparkline inline">loading...</div>
+          </td>
+          <td>Repeat Investors (trailing 30 days)</td>
+          <td class="text-success">
+            <i class="fa fa-level-up"></i> 8%
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 </div>

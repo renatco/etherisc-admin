@@ -91,29 +91,13 @@
 							<td class="text-center">
 								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 60,30,10 ], {type:'pie', height:19, sliceColors:['{{app.setting.color.warn}}','#fff','{{app.setting.color.primary}}']}" class="sparkline inline">loading...</div>
 							</td>
-							<td>Dominance of Top 5 Risk Pools</td>
+							<td>Concentraion of Risk (share of the largest pools among all pools)</td>
 							<td class="text-warning">
 								<i class="fa fa-level-down"></i> 11%
 							</td>
 						</tr>
-						<tr>
-							<td>
-								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.primary}}', fillColor:'transparent'}" class="sparkline inline">loading...</div>
-							</td>
-							<td>Social Impact - Share of Policies With Premiums Under $10</td>
-							<td class="text-success">
-								<i class="fa fa-level-up"></i> 33%
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'discrete', height:19, width:60, lineColor:'{{app.color.success}}'}" class="sparkline inline">loading...</div>
-							</td>
-							<td>Repeat Customers (trailing 30 days)</td>
-							<td class="text-success">
-								<i class="fa fa-level-up"></i> 20%
-							</td>
-						</tr>
+
+
 						<tr>
 							<td>
 								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.warn}}', fillColor:'{{app.setting.color.warn}}'}" class="sparkline inline">loading...</div>
@@ -123,15 +107,7 @@
 								<i class="fa fa-level-down"></i> 7%
 							</td>
 						</tr>
-						<tr>
-							<td>
-								<div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,16,15,16,14,17,18 ], {type:'line', height:19, width:60, lineColor:'{{app.setting.color.warn}}', fillColor:'transparent'}" class="sparkline inline">loading...</div>
-							</td>
-							<td>Repeat Investors (trailing 30 days)</td>
-							<td class="text-success">
-								<i class="fa fa-level-up"></i> 8%
-							</td>
-						</tr>
+
 					</tbody>
 				</table>
 			</div>
