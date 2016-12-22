@@ -1,0 +1,55 @@
+<div class="padding">
+  <div class="box">
+    <div class="box-header">
+      <h2>Policy List</h2>
+
+      <button class="md-btn md-fab m-b-sm blue pull-right" ng-click="simpleInsurance.refreshPolicies()">
+        <i class="material-icons md-24">&#x21bb;</i>
+      </button>
+    </div>
+
+    <div class="alert alert-success" ng-show="simpleInsurance.loading">
+      <span>Loading policies . . .</span>
+    </div>
+
+    <div class="alert alert-danger" ng-show="simpleInsurance.error">
+      <span>There was an error loading the policies, please try again.</span>
+    </div>
+
+    <div class="padding">
+      <table class="table table-striped table-hover ">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Customer</th>
+            <th>Premium</th>
+            <th>Flight</th>
+            <th>Prob. %</th>
+            <th>Last change</th>
+            <th>Status</th>
+            <th>Calc. Payout</th>
+            <th>Actual Payout</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr ng-repeat="policy in simpleInsurance.policies track by $index">
+             <td>{{$index}}</td>
+             <td>
+               <a ng-href="https://testnet.etherscan.io/address/{{policy[0]}}" target="_blank" rel="noopener">
+                 {{policy[9]}}...
+               </a>
+             </td>
+             <td>{{policy[1]}}</td>
+             <td>{{policy[2]}}</td>
+             <td>{{policy[3]}}</td>
+             <td>{{policy[5]}}</td>
+             <td>{{policy[6]}}</td>
+             <td>{{policy[7]}}</td>
+             <td>{{policy[8]}}</td>
+           </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
