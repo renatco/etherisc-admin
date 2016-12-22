@@ -53,6 +53,7 @@
               templateUrl: './views/pages/investors.html',
               data : { title: 'Investors' },
               controller: 'InvestorsCtrl',
+              controllerAs: 'investors',
               resolve: load(['./src/scripts/controllers/investors.js'])
             })
             .state('app.management', {
@@ -80,7 +81,7 @@
             .state('app.policies', {
               url: '/policies',
               templateUrl: './views/pages/policies.html',
-              data : { title: 'Simple Insurance' },
+              data : { title: 'Policy List' },
               controller: 'PoliciesCtrl',
               controllerAs: 'policies',
               resolve: load(['./src/scripts/controllers/policies.js'])

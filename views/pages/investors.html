@@ -1,0 +1,86 @@
+<div class="padding">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="box">
+        <div class="box-header primary">
+          <h2>Investors</h2>
+        </div>
+        <div class="box-body padding">
+          <h3 class="m-a-0">Provide reinsurance capital</h3>
+          <br>
+          <p class="m-a-0">
+            This is the investor side of the decentralized insurance market. Investors provide capital for the reinsurance pool by buying tokens. The reinsurance pool covers excessive risks which can not be paid from the regular insurance business. In this prototype the token is called RSC-FDD, the price is fixed with 0.01 ETH / RSC-FDD. You can buy tokens using the form below or by sending ETH from your address to the token contract at 0x00000… You can check the balance of any Ethereum address using the form below or get an overview of the current token holders on <a href="https://etherscan.io/" target="_blank" rel="noopener">etherscan</a> . Verify the source code of the underlying token contract on <a href="https://etherscan.io/" target="_blank" rel="noopener">etherscan</a> or fork it on <a href="https://github.com/" target="_blank" rel="noopener">Github</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="box">
+        <div class="box-header primary">
+          <h2>Buy Tokens</h2>
+        </div>
+        <div class="box-body padding">
+          <form name="ethInvestment" ng-submit="investors.submit($event)">
+            <div class="form-group">
+              <label for="eth-amount">Amount to invest (in ETH)</label>
+              <input
+                id="eth-amount"
+                name="amount"
+                type="number"
+                class="form-control"
+                ng-model="investors.form.amount"
+                min="0"
+                step="0.001"
+                placeholder="10.25"
+              >
+            </div>
+
+            <!-- <button type="submit" class="btn bt-fw accent">Buy tokens</button> -->
+            <!-- <button type="submit" class="btn btn-fw dark">Cancel</button> -->
+            <button type="submit" class="btn btn-outline b-primary text-primary">
+              Buy tokens
+            </button>
+            <button type="button" class="btn btn-outline b-warning text-warning" ng-click="investors.clear()">
+              Cancel
+            </button>
+
+            <div class="padding" ng-show="investors.loading">
+              <div class="alert alert-success">
+                <span>Wating for the transaction to finish . . .</span>
+              </div>
+            </div>
+
+            <div class="padding" ng-show="investors.error">
+              <div class="alert alert-danger">
+                <span>
+                  {{
+                    investors.errorMsg ||
+                    'There was an error getting your tokens, please check the transaction and try again.'
+                  }}
+                </span>
+              </div>
+            </div>
+
+            <div class="padding" ng-show="investors.success">
+              <div class="alert alert-success">
+                <p>The transaction was successful. You can check the transaction here:</p>
+
+                <p>
+                  <a
+                    ng-href="https://testnet.etherscan.io/tx/{{investors.transactionHash}}"
+                    style="width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                  >
+                    {{investors.transactionHash}}
+                  </a>
+                </p>
+
+                <p>Don't forget to click on "Convert to ASCII" ;-)</p>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
