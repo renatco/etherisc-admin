@@ -8,12 +8,16 @@
       </button>
     </div>
 
-    <div class="alert alert-success" ng-show="simpleInsurance.loading">
-      <span>Loading policies . . .</span>
+    <div class="padding" ng-show="simpleInsurance.loading">
+      <div class="alert alert-success">
+        <span>Loading policies . . .</span>
+      </div>
     </div>
 
-    <div class="alert alert-danger" ng-show="simpleInsurance.error">
-      <span>There was an error loading the policies, please try again.</span>
+    <div class="padding" ng-show="simpleInsurance.error">
+      <div class="alert alert-danger">
+        <span>There was an error loading the policies, please try again.</span>
+      </div>
     </div>
 
     <div class="padding">
