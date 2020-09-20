@@ -1,5 +1,7 @@
 # Etherisc Admin
 
+https://renatco.github.io/etherisc-admin/#/app/dashboard
+
 ## Development
 
 Install dependencies
